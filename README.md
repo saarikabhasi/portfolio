@@ -1,1 +1,1 @@
-This repo has source code for my portfolio
+Source code of my portfolio
