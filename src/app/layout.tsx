@@ -14,8 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name | Portfolio",
-  description: "Personal portfolio: about, projects, and contact.",
+  title: "Saarika Bhasi"
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
