@@ -1,0 +1,21 @@
+import { profile } from "./constants";
+
+const sections = ["Projects", "Experience", "Contact"];
+
+export function Nav() {
+    return (
+        <header className="sticky top-0 z-10 border-b border-foreground/10 bg-background/80 backdrop-blur ">
+            <nav className="mx-auto  max-w-7xl items-center justify-between px-6 py-4">
+                <ul className="flex flex-row justify-center gap-6 text-sm">
+                    {sections.map((item) => (
+                        <li key={item}>
+                            <a href={`#${item.toLowerCase()}`} className="opacity-70 transition hover:opacity-100">
+                                {item}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </nav>
+        </header>
+    )
+}
