@@ -11,7 +11,7 @@ export const Contact = () => {
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 opacity-80 transition hover:opacity-100"
+                        className="inline-flex items-center gap-2 rounded-full px-3 py-1 opacity-80 transition duration-150 hover:bg-cyan-400/10 hover:text-cyan-300 hover:opacity-100 active:scale-95 active:bg-cyan-400/20"
                     >
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${link.icon}`} alt="" aria-hidden="true" className="h-5 w-5 invert" />

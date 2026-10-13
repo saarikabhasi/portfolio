@@ -5,7 +5,7 @@ export function Aboutme() {
         <p className="max-w-2xl whitespace-pre-line opacity-80">{profile.about}</p>
         <ul className="mt-6 flex flex-wrap gap-2">
             {profile.skills.map((skill) => (
-                <li key={skill} className="rounded-full bg-mist-400/10 px-3 py-1 text-sm text-cyan-300">
+                <li key={skill} className="rounded-md bg-mist-400/10 px-3 py-1 text-sm text-cyan-300">
                     {skill}
                 </li>
             ))}

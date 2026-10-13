@@ -63,7 +63,7 @@ export function Projects() {
             <button
                 type="button"
                 onClick={() => setExtraPages(hasMore ? extraPages + 1 : 0)}
-                className={`mt-6 rounded-full border px-5 py-2 text-sm font-medium transition ${
+                className={`mt-6 rounded-full border px-5 py-2 text-sm font-medium transition duration-150 active:scale-95 ${
                     hasMore
                         ? "border-cyan-300 bg-cyan-400/10 text-cyan-300 hover:bg-cyan-400/20"
                         : "border-foreground/20 hover:bg-foreground/5"

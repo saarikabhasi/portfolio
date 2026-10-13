@@ -9,7 +9,7 @@ export function Nav() {
                 <ul className="flex flex-row justify-center gap-6 text-sm">
                     {sections.map((item) => (
                         <li key={item}>
-                            <a href={`#${item.toLowerCase()}`} className="opacity-70 transition hover:opacity-100">
+                            <a href={`#${item.toLowerCase()}`} className="inline-block rounded-full px-3 py-1 opacity-70 transition duration-150 hover:bg-cyan-400/10 hover:text-cyan-300 hover:opacity-100 active:scale-95 active:bg-cyan-400/20">
                                 {item}
                             </a>
                         </li>
