@@ -33,13 +33,25 @@ export function Projects() {
                 <a
                     key={project.title}
                     href={project.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="group flex flex-col rounded-xl border border-foreground/10 p-5 transition hover:border-foreground/30 hover:bg-foreground/5"
                 >
-                    <h3 className="font-semibold group-hover:underline">{project.title}</h3>
+                    <h3 className="flex items-start justify-between gap-2 font-semibold group-hover:underline">
+                        {project.title}
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                            src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/icons/external-link.svg`}
+                            alt=""
+                            aria-hidden="true"
+                            className="mt-1 h-4 w-4 shrink-0 opacity-50 transition group-hover:opacity-100"
+                        />
+                        <span className="sr-only">(opens in a new tab)</span>
+                    </h3>
                     <p className="mt-2 flex-1 text-sm opacity-70">{project.description}</p>
                     <ul className="mt-4 flex flex-wrap gap-2 text-xs opacity-60">
                         {project.tags.map((tag) => (
-                            <li key={tag} className="rounded-full bg-foreground/10 px-3 py-1 text-sm">
+                            <li key={tag} className="rounded-full px-3 py-1 text-sm bg-mist-400/10 text-cyan-300">
                                 {tag}
                             </li>
                         ))}
@@ -51,7 +63,11 @@ export function Projects() {
             <button
                 type="button"
                 onClick={() => setExtraPages(hasMore ? extraPages + 1 : 0)}
-                className="mt-6 rounded-full border border-foreground/20 px-5 py-2 text-sm font-medium transition hover:bg-foreground/5"
+                className={`mt-6 rounded-full border px-5 py-2 text-sm font-medium transition ${
+                    hasMore
+                        ? "border-cyan-300 bg-cyan-400/10 text-cyan-300 hover:bg-cyan-400/20"
+                        : "border-foreground/20 hover:bg-foreground/5"
+                }`}
             >
                 {hasMore ? "Show more" : "Show less"}
             </button>
