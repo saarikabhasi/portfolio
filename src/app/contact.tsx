@@ -14,7 +14,7 @@ export const Contact = () => {
                         className="inline-flex items-center gap-2 opacity-80 transition hover:opacity-100"
                     >
                         {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src={link.icon} alt="" aria-hidden="true" className="h-5 w-5 dark:invert" />
+                        <img src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${link.icon}`} alt="" aria-hidden="true" className="h-5 w-5 dark:invert" />
                         <span className="underline">{link.label}</span>
                     </a>
                 </li>
