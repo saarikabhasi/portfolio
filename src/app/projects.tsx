@@ -3,7 +3,7 @@
 import { useState, useSyncExternalStore } from "react";
 import { projects } from "./constants";
 
-const DESKTOP_PAGE_SIZE = 3;
+const DESKTOP_PAGE_SIZE = 2;
 const MOBILE_PAGE_SIZE = 1;
 const DESKTOP_QUERY = "(min-width: 640px)";
 
@@ -28,16 +28,16 @@ export function Projects() {
 
     return (<section id="projects" className="scroll-mt-20 py-16">
         <h2 className="mb-6 text-2xl font-semibold">Projects</h2>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 ">
+        <div className="grid gap-4 sm:grid-cols-2">
             {projects.slice(0, visible).map((project) => (
                 <a
                     key={project.title}
                     href={project.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex flex-col rounded-xl border  bg-green-600/10  border-foreground/10 p-5 transition hover:border-foreground/30 hover:bg-foreground/5 hover:bg-yellow-300/40"
+                    className="group flex min-h-48 flex-col rounded-xl border  bg-green-600/10  border-foreground/10 p-5 transition hover:border-foreground/30 hover:bg-foreground/5 hover:bg-yellow-300/40"
                 >
-                    <h3 className="flex items-start justify-between gap-2 font-semibold group-hover:underline">
+                    <h3 className="flex items-start justify-between gap-2 font-semibold text-lg text-green-900 group-hover:underline">
                         {project.title}
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
@@ -51,7 +51,7 @@ export function Projects() {
                     <p className="mt-2 flex-1 text-md opacity-70">{project.description}</p>
                     <ul className="mt-4 flex flex-wrap gap-2 text-md opacity-60">
                         {project.tags.map((tag) => (
-                            <li key={tag} className="rounded-full px-3 py-1 bg-rose-300/50 text-md  text-black-300">
+                            <li key={tag} className="rounded-full px-3 py-1 bg-mist-400/10 text-md  text-blue-900 font-semibold">
                                 {tag}
                             </li>
                         ))}
