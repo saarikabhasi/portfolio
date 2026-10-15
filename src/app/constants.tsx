@@ -3,7 +3,7 @@ export const profile = {
     role: "Software engineer",
     tagline: "I build clean, fast, and accessible web applications. ",
     about:
-        "Hi, I'm Saarika. I am a Software Engineer with experience in bridging design and system architecture to build intuitive, high-engagement web applications. Formerly at Elastic where I solved complex technical challenges and owning them end-to-end from initial system design and trade-off analysis (scalability, performance, backward compatibility) to seamless backend integration and delivery. Constant learner and loves building of practical tools. Currently looking for new opportunities.",
+        "Hi, I'm Saarika. I am a Software Engineer with experience in bridging design and system architecture to build intuitive, high-engagement web applications. Formerly at Elastic, where I solved complex technical challenges and owning them end-to-end from initial system design and trade-off analysis (scalability, performance, backward compatibility) to seamless backend integration and delivery. Constant learner and loves building of practical tools. Currently looking for new opportunities.!",
 
 
     skills: ["TypeScript", "React", "Python", "Linux shell scripts", "Git", "TanStack Query", "Next.js", "Node.js", "Elasticsearch", "MySQL"],

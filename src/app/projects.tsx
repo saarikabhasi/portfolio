@@ -64,8 +64,8 @@ export function Projects() {
                 type="button"
                 onClick={() => setExtraPages(hasMore ? extraPages + 1 : 0)}
                 className={`mt-6 rounded-full border px-5 py-2 text-sm font-medium transition duration-150 active:scale-95 ${hasMore
-                    ? "border-blue-300 bg-blue-400/10 text-white-300 hover:border-blue-600 hover:bg-blue-600/20"
-                    : "border-foreground/20 hover:border-blue-600 hover:bg-blue-600/20"
+                    ? "border-yellow-300 hover:bg-yellow-500/20  hover:bg-yellow-500/20"
+                    : " border-yellow-300  hover:bg-yellow-500/20 hover:bg-yellow-500/20"
                     }`}
             >
                 {hasMore ? "Show more" : "Show less"}

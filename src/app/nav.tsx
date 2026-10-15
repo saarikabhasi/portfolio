@@ -7,7 +7,7 @@ export function Nav() {
                 <ul className="flex flex-row justify-center gap-6 text-xl font-bold">
                     {sections.map((item) => (
                         <li key={item}>
-                            <a href={`#${item.toLowerCase()}`} className="inline-block rounded-full px-3 py-1 opacity-70 transition duration-150 hover:bg-yellow-300/40  hover:opacity-100 active:scale-95 active:bg-cyan-400/20">
+                            <a href={`#${item.toLowerCase()}`} className="inline-block  border-yellow-300 rounded-full px-5 py-2 opacity-70 transition duration-150 hover:bg-yellow-300/40  hover:opacity-100 active:scale-95 text-green-950">
                                 {item}
                             </a>
                         </li>
