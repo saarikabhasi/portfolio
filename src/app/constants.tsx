@@ -1,9 +1,10 @@
 export const profile = {
     name: "Saarika Bhasi",
     role: "Software engineer",
-    tagline: "I build clean, fast, and accessible web applications.",
+    tagline: "I build clean, fast, and accessible web applications. ",
     about:
-        "Hi, I'm Saarika! I'm a software engineer and I love solving complex problems and build polished and dependable products. I enjoy learning new technologies  and I'm always looking for ways to grow.\n\nIn my most recent experience as a software engineer at Elastic, I specialized in frontend development and led projects across multiple teams, with a close eye on design quality. I also have backend experience in Python, built mostly through personal projects. I'm currently open to new opportunities!",
+        "Hi, I'm Saarika. I am a Software Engineer with experience in bridging design and system architecture to build intuitive, high-engagement web applications. Formerly at Elastic where I solved complex technical challenges and owning them end-to-end from initial system design and trade-off analysis (scalability, performance, backward compatibility) to seamless backend integration and delivery. Constant learner and loves building of practical tools. Currently looking for new opportunities.",
+
 
     skills: ["TypeScript", "React", "Python", "Linux shell scripts", "Git", "TanStack Query", "Next.js", "Node.js", "Elasticsearch", "MySQL"],
     links: [

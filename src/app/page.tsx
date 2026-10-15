@@ -12,7 +12,7 @@ export default function Page() {
     <div className="min-h-screen scroll-smooth">
       <main className="mx-auto max-w-none px-6">
         <Nav />
-        <div className="mx-auto flex max-w-6xl flex-col gap-12 py-16 sm:py-24 lg:flex-row lg:gap-24">
+        <div className="mx-auto flex max-w-6xl flex-col gap-12 py-16 sm:py-24 lg:flex-row lg:gap-6">
           <div className="lg:sticky lg:top-24 lg:w-2/5 lg:self-start"><Introduction /></div>
 
           <div className="lg:w-3/5">

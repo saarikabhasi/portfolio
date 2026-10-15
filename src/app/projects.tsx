@@ -28,14 +28,14 @@ export function Projects() {
 
     return (<section id="projects" className="scroll-mt-20 py-16">
         <h2 className="mb-6 text-2xl font-semibold">Projects</h2>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 ">
             {projects.slice(0, visible).map((project) => (
                 <a
                     key={project.title}
                     href={project.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex flex-col rounded-xl border border-foreground/10 p-5 transition hover:border-foreground/30 hover:bg-foreground/5"
+                    className="group flex flex-col rounded-xl border  bg-green-600/10  border-foreground/10 p-5 transition hover:border-foreground/30 hover:bg-foreground/5 hover:bg-yellow-300/40"
                 >
                     <h3 className="flex items-start justify-between gap-2 font-semibold group-hover:underline">
                         {project.title}
@@ -44,14 +44,14 @@ export function Projects() {
                             src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/icons/external-link.svg`}
                             alt=""
                             aria-hidden="true"
-                            className="mt-1 h-4 w-4 shrink-0 opacity-50 transition group-hover:opacity-100"
+                            className="mt-1 h-4 w-4 shrink-0 opacity-50 transition bg-green-600  "
                         />
                         <span className="sr-only">(opens in a new tab)</span>
                     </h3>
-                    <p className="mt-2 flex-1 text-sm opacity-70">{project.description}</p>
-                    <ul className="mt-4 flex flex-wrap gap-2 text-xs opacity-60">
+                    <p className="mt-2 flex-1 text-md opacity-70">{project.description}</p>
+                    <ul className="mt-4 flex flex-wrap gap-2 text-md opacity-60">
                         {project.tags.map((tag) => (
-                            <li key={tag} className="rounded-full px-3 py-1 text-sm bg-mist-400/10 text-cyan-300">
+                            <li key={tag} className="rounded-full px-3 py-1 bg-rose-300/50 text-md  text-black-300">
                                 {tag}
                             </li>
                         ))}
@@ -63,11 +63,10 @@ export function Projects() {
             <button
                 type="button"
                 onClick={() => setExtraPages(hasMore ? extraPages + 1 : 0)}
-                className={`mt-6 rounded-full border px-5 py-2 text-sm font-medium transition duration-150 active:scale-95 ${
-                    hasMore
-                        ? "border-cyan-300 bg-cyan-400/10 text-cyan-300 hover:bg-cyan-400/20"
-                        : "border-foreground/20 hover:bg-foreground/5"
-                }`}
+                className={`mt-6 rounded-full border px-5 py-2 text-sm font-medium transition duration-150 active:scale-95 ${hasMore
+                    ? "border-blue-300 bg-blue-400/10 text-white-300 hover:border-blue-600 hover:bg-blue-600/20"
+                    : "border-foreground/20 hover:border-blue-600 hover:bg-blue-600/20"
+                    }`}
             >
                 {hasMore ? "Show more" : "Show less"}
             </button>
