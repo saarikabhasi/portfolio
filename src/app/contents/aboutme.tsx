@@ -1,4 +1,4 @@
-import { profile } from "./constants";
+import { profile } from "../constants";
 
 export function Aboutme() {
     return (<section id="about" className="scroll-mt-20 py-10">

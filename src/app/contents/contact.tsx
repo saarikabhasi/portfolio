@@ -1,4 +1,4 @@
-import { profile } from "./constants"
+import { profile } from "../constants"
 
 export const Contact = () => {
     return (<section id="contact" className="mt-16 mb-8 scroll-mt-20 rounded-xl border border-foreground/10 p-6 bg-zinc-500/10">

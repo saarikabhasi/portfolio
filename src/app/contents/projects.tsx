@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useSyncExternalStore } from "react";
-import { projects } from "./constants";
+import { projects } from "../constants";
 
 const DESKTOP_PAGE_SIZE = 2;
 const MOBILE_PAGE_SIZE = 1;

@@ -1,4 +1,4 @@
-import { profile } from "./constants";
+import { profile } from "../constants";
 
 export function Introduction() {
     return (<section id="introduction" className="py-8">

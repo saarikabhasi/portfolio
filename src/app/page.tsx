@@ -1,9 +1,9 @@
-import { Aboutme } from "./aboutme";
+import { Aboutme } from "./contents/aboutme";
 import { profile } from "./constants";
-import { Contact } from "./contact";
-import { Introduction } from "./introduction";
-import { Nav } from "./nav";
-import { Projects } from "./projects";
+import { Contact } from "./contents/contact";
+import { Introduction } from "./contents/introduction";
+import { Nav } from "./navigations/nav";
+import { Projects } from "./contents/projects";
 
 
 
