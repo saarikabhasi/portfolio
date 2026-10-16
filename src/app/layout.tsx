@@ -4,26 +4,23 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./css/globals.css";
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+    variable: "--font-geist-sans",
+    subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+    variable: "--font-geist-mono",
+    subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Saarika Bhasi"
+    title: "Saarika Bhasi",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
-  return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable}`}
-    >
-      <body className="font-sans antialiased">{children}</body>
-    </html>
-  );
+    return (
+        <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+            <body className="font-sans antialiased">{children}</body>
+        </html>
+    );
 }

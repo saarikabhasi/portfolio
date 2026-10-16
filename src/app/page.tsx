@@ -5,32 +5,29 @@ import { Introduction } from "./contents/introduction";
 import { Nav } from "./navigations/nav";
 import { Projects } from "./contents/projects";
 
-
-
 export default function Page() {
-  return (
-    <div className="min-h-screen scroll-smooth">
-      <main className="mx-auto max-w-none px-6">
-        <Nav />
-        <div className="mx-auto flex max-w-6xl flex-col gap-12 pt-16 pb-0 sm:pt-24 sm:pb-0 lg:flex-row lg:gap-6">
-          <div className="lg:sticky lg:top-24 lg:w-2/5 lg:self-start"><Introduction /></div>
+    return (
+        <div className="min-h-screen scroll-smooth">
+            <main className="mx-auto max-w-none px-6">
+                <Nav />
+                <div className="mx-auto flex max-w-6xl flex-col gap-12 pt-16 pb-0 sm:pt-24 sm:pb-0 lg:flex-row lg:gap-6">
+                    <div className="lg:sticky lg:top-24 lg:w-2/5 lg:self-start">
+                        <Introduction />
+                    </div>
 
-          <div className="lg:w-3/5">
-            <Aboutme />
+                    <div className="lg:w-3/5">
+                        <Aboutme />
 
-            <Projects />
+                        <Projects />
 
-            <Contact />
+                        <Contact />
+                    </div>
+                </div>
+            </main>
 
-          </div>
+            <footer className="border-t border-foreground/10 py-8 text-center text-sm opacity-60">
+                Created by {profile.name}
+            </footer>
         </div>
-
-
-      </main>
-
-      <footer className="border-t border-foreground/10 py-8 text-center text-sm opacity-60">
-        Created by {profile.name}
-      </footer>
-    </div >
-  );
+    );
 }
